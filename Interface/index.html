@@ -297,7 +297,7 @@
 
     function startPlugin() {
       window.plugin_interface_ready = true;
-      var old_interface = Lampa.InteractionMain;
+      var old_interface = component;
       var new_interface = component;
 
       Lampa.InteractionMain = function (object) {
@@ -311,6 +311,6 @@
       $('body').append(Lampa.Template.get('new_interface_style', {}, true));
     }
 
-    if (!window.plugin_interface_ready) startPlugin();
+    startPlugin();
 
 })();

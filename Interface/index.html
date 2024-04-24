@@ -304,9 +304,9 @@
         var use = new_interface;
         if (!(object.source == 'tmdb' || object.source == 'cub')) use = old_interface;
         if (window.innerWidth < 767) use = old_interface;
-        // Ïðîâåðêà ïîäïèñêè (ïðåìèóì) óäàëåíà
+        // ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸ (Ð¿Ñ€ÐµÐ¼Ð¸ÑƒÐ¼) ÑƒÐ´Ð°Ð»ÐµÐ½Ð°
         // if (!Lampa.Account.hasPremium()) use = old_interface;
-        if (Lampa.Manifest.app_digital < 153) use = old_interface;
+        //if (Lampa.Manifest.app_digital < 153) use = old_interface;
         return new use(object);
       };
 
